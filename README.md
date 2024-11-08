@@ -30,7 +30,7 @@ docker pull strongorange/image-to-webp:latest
 `images` 폴더가 위치한 디렉토리에서 다음 명령어를 실행합니다:
 
 ```bash
-docker run -v $(pwd)/images:/data -e WIDTH=800 strongorange/image-to-webp
+docker run --rm -v $(pwd)/images:/data -e WIDTH=800 strongorange/image-to-webp
 ```
 
 ### 명령어 설명
