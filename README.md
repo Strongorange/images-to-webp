@@ -37,6 +37,7 @@ docker run --rm -v $(pwd)/images:/data -e WIDTH=800 strongorange/image-to-webp
 
 - `-v $(pwd)/images:/data`: 로컬의 `images` 폴더를 컨테이너의 `/data` 디렉토리에 마운트합니다.
 - `-e WIDTH=800`: 출력 이미지의 가로 길이를 800으로 설정합니다. 세로 길이는 원본 비율에 맞추어 자동으로 조정됩니다.
+- `-e QUALITY=100`: 출력 이미지의 품질을 결정합니다. 기본값은 75 입니다.
 
 명령어 실행 후, 변환된 이미지들은 `images` 폴더 안의 `webp` 하위 폴더에 저장됩니다.
 
